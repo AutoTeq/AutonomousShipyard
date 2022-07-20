@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
+			<Id>
+				<TypeId>MyObjectBuilder_Projector</TypeId>
+				<SubtypeId>AutonomousShipyardLarge</SubtypeId>
+			</Id>
+			<DisplayName>Autonomous Shipyard Lg</DisplayName>
+			<Description>A facility to assit in the building of ships in your shipyard.</Description>
+			<Icon>Textures\Icons\AutonomousShipyard.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\AutonomousShipyard.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="300" />
+				<Component Subtype="Construction" Count="240" />
+				<Component Subtype="InteriorPlate" Count="275" />
+				<Component Subtype="SmallTube" Count="60" />
+				<Component Subtype="LargeTube" Count="110" />
+				<Component Subtype="MetalGrid" Count="120" />
+				<Component Subtype="Superconductor" Count="50" />
+				<Component Subtype="PowerCell" Count="150" />
+				<Component Subtype="Motor" Count="325" />
+				<Component Subtype="Computer" Count="450" />            
+				<Component Subtype="Construction" Count="20" />
+				<Component Subtype="Display" Count="50" />
+				<Component Subtype="Motor" Count="80" />
+				<Component Subtype="SteelPlate" Count="120" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\AutonomousShipyard_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\AutonomousShipyard_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\AutonomousShipyard_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AutonomousShipyard</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>240</BuildTimeSeconds>
+			<ResourceSinkGroup>Utility</ResourceSinkGroup>
+			<RequiredPowerInput>15</RequiredPowerInput>
+			<Public>true</Public>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<PrimarySound>BlockProjectorOn</PrimarySound>
+			<IdleSound>BlockProjectorOff</IdleSound>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>50</PCU>
+			<IsAirTight>true</IsAirTight>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
+			<Id>
+				<TypeId>MyObjectBuilder_Projector</TypeId>
+				<SubtypeId>AutonomousShipyardSmall</SubtypeId>
+			</Id>
+			<DisplayName>Autonomous Shipyard Sm</DisplayName>
+			<Description>A facility to assit in the building of ships in your shipyard.</Description>
+			<Icon>Textures\Icons\AutonomousShipyard.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\AutonomousShipyard.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="150" />
+				<Component Subtype="Construction" Count="120" />
+				<Component Subtype="InteriorPlate" Count="135" />
+				<Component Subtype="SmallTube" Count="30" />
+				<Component Subtype="LargeTube" Count="60" />
+				<Component Subtype="MetalGrid" Count="60" />
+				<Component Subtype="Superconductor" Count="25" />
+				<Component Subtype="PowerCell" Count="75" />
+				<Component Subtype="Motor" Count="175" />
+				<Component Subtype="Computer" Count="225" />            
+				<Component Subtype="Construction" Count="60" />
+				<Component Subtype="Display" Count="25" />
+				<Component Subtype="Motor" Count="40" />
+				<Component Subtype="SteelPlate" Count="60" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\AutonomousShipyard_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\AutonomousShipyard_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\AutonomousShipyard_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AutonomousShipyard</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>120</BuildTimeSeconds>
+			<ResourceSinkGroup>Utility</ResourceSinkGroup>
+			<RequiredPowerInput>5</RequiredPowerInput>
+			<Public>true</Public>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<PrimarySound>BlockProjectorOn</PrimarySound>
+			<IdleSound>BlockProjectorOff</IdleSound>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>50</PCU>
+			<IsAirTight>true</IsAirTight>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
