@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlockState.cs" />
+    <Compile Include="BlockSettings.cs" />
+    <Compile Include="Comms.cs" />
+    <Compile Include="UIControls.cs" />
+    <Compile Include="StateMachine.cs" />
+    <Compile Include="Logic.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

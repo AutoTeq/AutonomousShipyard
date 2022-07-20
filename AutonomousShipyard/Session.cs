@@ -15,6 +15,7 @@ namespace avaness.AutonomousShipyard
     public class AutonomousShipyardSession : MySessionComponentBase
     {
         public static AutonomousShipyardSession Instance; // the only way to access session comp from other classes and the only accepted static.
+        private bool controlsInit;
 
         private bool init = false;
 
@@ -85,6 +86,15 @@ namespace avaness.AutonomousShipyard
         public override void UpdatingStopped()
         {
             // executed when game is paused
+        }
+
+        public void InitControls()
+        {
+            if (!controlsInit)
+            {
+                MyAPIGateway.TerminalControls.CustomControlGetter += UIControls.CreateControls;
+                controlsInit = true;
+            }
         }
     }
 }
